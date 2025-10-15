@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nexus</title>
+  <!-- Import de la police Poppins depuis Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -16,7 +18,7 @@
       color: #fff;
       font-family: "Trebuchet MS", Helvetica, sans-serif;
       text-align: center;
-      position: relative; /* nécessaire pour positionner le lien en bas */
+      position: relative;
       overflow: hidden;
     }
 
@@ -27,12 +29,15 @@
     }
 
     .contact {
-      font-size: 1rem;
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      font-size: 1.2rem;
       color: #aaa;
     }
 
     .contact a {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 100;
+      font-size: 1.3rem;
+      letter-spacing: 0.5px;
       color: #fff;
       text-decoration: none;
       border-bottom: 1px solid rgba(255,255,255,0.4);
@@ -44,7 +49,6 @@
       border-color: #1da4b9;
     }
 
-    /* --- Lien Mentions légales --- */
     .mentions {
       position: absolute;
       bottom: 10px;
@@ -65,7 +69,6 @@
       border-color: #1da4b9;
     }
 
-    /* --- Adaptation mobile --- */
     @media (max-width: 768px) {
       .mentions {
         right: 0;
