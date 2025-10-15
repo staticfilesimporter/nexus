@@ -6,6 +6,10 @@
   <title>Nexus</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;400&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       height: 100vh;
@@ -18,7 +22,7 @@
       font-family: "Trebuchet MS", Helvetica, sans-serif;
       text-align: center;
       position: relative;
-      overflow: hidden;
+      overflow-x: hidden; /* ⛔ Empêche la bande sur le côté */
       padding: 20px 0;
     }
 
@@ -32,8 +36,9 @@
 
     .logo {
       max-width: 600px;
-      width: 100vw;
+      width: 100%;
       margin-bottom: 1.5rem;
+      padding: 0 20px;
     }
 
     .contact {
@@ -58,13 +63,11 @@
     }
 
     .mentions {
-      margin-top: 2rem;
-      padding: 20px 15px;
+      position: absolute;
+      bottom: 30px;
+      right: 20px;
       font-size: 0.9rem;
       color: #aaa;
-      width: 100%;
-      text-align: right;
-      flex-shrink: 0;
     }
 
     .mentions a {
@@ -81,6 +84,8 @@
 
     @media (max-width: 768px) {
       .mentions {
+        right: 0;
+        left: 0;
         text-align: center;
       }
     }
@@ -91,6 +96,7 @@
     <img src="logo.png" alt="Logo" class="logo">
     <p class="contact"><a href="mailto:contact@nexus-influence.com">contact@nexus-influence.com</a></p>
   </div>
+
   <div class="mentions">
     <a href="mentions-legales.html">Mentions légales</a>
   </div>
