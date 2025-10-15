@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nexus</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <title>Mentions légales - Nexus</title>
   <style>
     body {
       margin: 0;
@@ -15,75 +14,60 @@
       align-items: center;
       background: linear-gradient(135deg, #0d1f9a 20%, #000000 60%);
       color: #fff;
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      font-family: "Helvetica Neue", Arial, sans-serif;
       text-align: center;
-      position: relative;
-      overflow: hidden;
+      padding: 2rem;
     }
 
-    .logo {
-      max-width: 600px;
-      width: 100vw;
-      margin-bottom: 1.5rem;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
     }
 
-    .contact {
-      font-size: 1.2rem;
-      color: #aaa;
+    p {
+      max-width: 700px;
+      line-height: 1.6;
+      font-size: 1rem;
+      color: #ddd;
+      margin-bottom: 1rem;
     }
 
-    .contact a {
-      font-family: "DM Sans", sans-serif;
-      font-weight: 100;
-      font-size: 1.3rem;
-      letter-spacing: 0.5px;
+    a {
+      color: #1da4b9;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(29,164,185,0.5);
+      transition: color 0.3s, border-color 0.3s;
+    }
+
+    a:hover {
       color: #fff;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(255,255,255,0.4);
-      transition: color 0.3s, border-color 0.3s;
+      border-color: #fff;
     }
 
-    .contact a:hover {
-      color: #1da4b9;
-      border-color: #1da4b9;
-    }
-
-    .mentions {
-      position: absolute;
-      bottom: 10px;
-      right: 15px;
+    .back {
+      margin-top: 2rem;
       font-size: 0.9rem;
-      color: #aaa;
-    }
-
-    .mentions a {
-      color: #aaa;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
-      transition: color 0.3s, border-color 0.3s;
-    }
-
-    .mentions a:hover {
-      color: #1da4b9;
-      border-color: #1da4b9;
-    }
-
-    @media (max-width: 768px) {
-      .mentions {
-        right: 0;
-        left: 0;
-        bottom: 10px;
-        text-align: center;
-      }
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Logo" class="logo">
-  <p class="contact"><a href="mailto:contact@nexus-influence.com">contact@nexus-influence.com</a></p>
+  <main>
+    <h1>Mentions légales</h1>
+    <p><strong>Éditeur :</strong> Nexus Influence<br>
+      Siège social : 123 Rue de l’Innovation, 75000 Paris, France<br>
+      Email : <a href="mailto:contact@nexus-influence.com">contact@nexus-influence.com</a></p>
 
-  <div class="mentions">
-    <a href="mentions-legales.html">Mentions légales</a>
-  </div>
+    <p><strong>Hébergement :</strong><br>
+      OVH SAS – 2 rue Kellermann – 59100 Roubaix – France</p>
+
+    <p><strong>Propriété intellectuelle :</strong><br>
+      Le contenu du site, incluant textes, logos et éléments graphiques, est la propriété exclusive de Nexus Influence sauf mention contraire.  
+      Toute reproduction, diffusion ou modification sans autorisation préalable est interdite.</p>
+
+    <div class="back">
+      <a href="index.html">← Retour à l’accueil</a>
+    </div>
+  </main>
 </body>
 </html>
