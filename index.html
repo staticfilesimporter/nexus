@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <title>Nexus</title>
   <style>
     body {
       margin: 0;
@@ -12,16 +12,12 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      
-      /* --- OPTION 1 : Fond noir --- */
-      /* background: #000; */
-      
-      /* --- OPTION 2 : Dégradé bleu → noir (plus rapide) --- */
       background: linear-gradient(135deg, #0d1f9a 20%, #000000 60%);
-      
       color: #fff;
-      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
       text-align: center;
+      position: relative; /* nécessaire pour positionner le lien en bas */
+      overflow: hidden;
     }
 
     .logo {
@@ -32,6 +28,7 @@
 
     .contact {
       font-size: 1rem;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
       color: #aaa;
     }
 
@@ -46,10 +43,45 @@
       color: #1da4b9;
       border-color: #1da4b9;
     }
+
+    /* --- Lien Mentions légales --- */
+    .mentions {
+      position: absolute;
+      bottom: 10px;
+      right: 15px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .mentions a {
+      color: #aaa;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      transition: color 0.3s, border-color 0.3s;
+    }
+
+    .mentions a:hover {
+      color: #1da4b9;
+      border-color: #1da4b9;
+    }
+
+    /* --- Adaptation mobile --- */
+    @media (max-width: 768px) {
+      .mentions {
+        right: 0;
+        left: 0;
+        bottom: 10px;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
   <img src="logo.png" alt="Logo" class="logo">
   <p class="contact"><a href="mailto:contact@nexus-influence.com">contact@nexus-influence.com</a></p>
+
+  <div class="mentions">
+    <a href="mentions-legales.html">Mentions légales</a>
+  </div>
 </body>
 </html>
