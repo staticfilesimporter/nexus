@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      /* --- OPTION 1 : Fond noir --- */
+      /* background: #000; */
+      
+      /* --- OPTION 2 : Dégradé bleu → noir (plus rapide) --- */
+      background: linear-gradient(135deg, #0d1f9a 20%, #000000 60%);
+      
+      color: #fff;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      text-align: center;
+    }
+
+    .logo {
+      max-width: 600px;
+      width: 100vw;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact {
+      font-size: 1rem;
+      color: #aaa;
+    }
+
+    .contact a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+      transition: color 0.3s, border-color 0.3s;
+    }
+
+    .contact a:hover {
+      color: #1da4b9;
+      border-color: #1da4b9;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" alt="Logo" class="logo">
+  <p class="contact"><a href="mailto:contact@nexus-influence.com">contact@nexus-influence.com</a></p>
+</body>
+</html>
